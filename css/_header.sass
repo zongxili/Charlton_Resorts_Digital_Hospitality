@@ -5,6 +5,31 @@ body
   header
     background-image: url('../assets/images/hero.png')
     height: 100vh
-    .header-logo-img
-      height: 100px
-      width: 100px
+    .logo_container
+      // background: blue
+      display: inline-block
+      .header-logo-img
+        height: 135px
+        width: 100px
+        margin: 55px 0px 0px 100px
+    .list_container
+      margin-top: 100px
+      padding: 0
+      ul
+        list-style: none
+        // background: red
+        display: flex
+        li
+          display: inline
+          font-size: 24px
+          margin-left: auto
+          margin-right: auto
+          flex-grow: 1
+    .center_text
+      top: 50%
+      transform: translateY(75%)
+      h1
+        font-size: 70px
+      span
+        font-size: 50px
+        line-height: 100%
