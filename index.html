@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +18,30 @@
 </head>
 
 <body>
-  <header class="header" id="myHeader">
-    <div class="logo-container pe-2">
-      <a href="/" title="Best Western Plus Saddleback Inn"><img class="header-logo-img cursor-pointer bw-logo-header"
-          src="../../content/images/logo.png" alt="Best Western Plus Saddleback Inn"
-          title="Best Western Plus Saddleback Inn" /></a>
-      <a href="/" title="Best Western Plus Saddleback Inn"> <img
-          class="header-logo-img cursor-pointer dining-logo-header" style="display:none;"
+  <header class="header">
+    <div class="logo-container">
+      <a href="/" title="Charlton Resorts Logo">
+        <img class="header-logo-img cursor-pointer" src="./assets/images/logo.png" alt="Charlton Resorts Logo"
+          title="Charlton Resorts Logo" />
+      </a>
+      <!-- <a href="/" title="Best Western Plus Saddleback Inn">
+        <img class="header-logo-img cursor-pointer dining-logo-header" style="display:none;"
           src="../../content/images/dining-logo.png" alt="Best Western Plus Saddleback Inn"
-          title="Best Western Plus Saddleback Inn" /></a>
+          title="Best Western Plus Saddleback Inn" />
+      </a> -->
     </div>
     <div class="list-container position-relative">
-      <ul class="menu-heder d-md-flex align-items-md-center" id="menu_mobile">
-        <li class="list-item"><a href="/" class="home" title="HOME">HOME</a></li>
-        <li class="list-item"><a href="/rooms" class="rooms" title="Rooms">Rooms</a></li>
+      <ul class="list-unstyled" id="menu_mobile">
+        <li class="list-item"><a href="/" class="home" title="HOME">Home</a></li>
+        <li class="list-item"><a href="/" class="home" title="Charlton Banff">Charlton Banff</a></li>
+        <li class="list-item"><a href="/" class="home" title="Royal Canadian Lodge">Royal Canadian Lodge</a></li>
+        <li class="list-item"><a href="/" class="home" title="Meetings, Groups and Events">Meetings, Groups and
+            Events</a></li>
+        <li class="list-item"><a href="/" class="home" title="About us">About us</a></li>
+        <li class="list-item"><a href="/" class="home" title="Careers">Careers</a></li>
+        <li class="list-item"><a href="/" class="home" title="Contact us">Contact us</a></li>
       </ul>
-      <div class="mob-cal-icon">
+      <!-- <div class="mob-cal-icon">
         <a href="tel:4059477000" title="14059477000">
           <svg class="icon">
             <use xlink:href="#call" />
@@ -37,10 +51,16 @@
       <div class="navToggle" id="menuToggle">
         <div class="icon-left"></div>
         <div class="icon-right"></div>
-      </div>
+      </div> -->
+    </div>
+    <div>
+      <h1>Welcome to the Charlton Banff</h1>
+      <span class="text-white">A Banff family-owned hotel company</span>
+      <span class="text-white">welcoming guests since 1949</span>
+      <p class="text-white bg-dark">.text-white</p>
+      <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
     </div>
   </header>
-
 </body>
 
 </html>

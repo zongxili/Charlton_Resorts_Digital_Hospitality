@@ -1,27 +1,19 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body header {
+  background-image: url("../assets/images/hero.png");
+  height: 100vh;
+}
+body header .header-logo-img {
+  height: 100px;
+  width: 100px;
+}
+
 footer {
   background-color: aqua;
-}
-
-body {
-  background: red;
-  color: aqua;
-}
-body div {
-  background-color: pink;
-  width: 31.25%;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
-}
-
-.success {
-  border: 2px solid green;
-  padding: 20px;
-}
-
-.success {
-  background: green;
 }
 
 /*# sourceMappingURL=style.css.map */
