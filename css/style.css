@@ -41,6 +41,7 @@ body header .center_text span {
   font-size: 50px;
   line-height: 100%;
 }
+
 body .hotel_section {
   background-color: #1A1515;
   padding: 100px 0 100px;
@@ -57,11 +58,27 @@ body .hotel_section .hotel_section_info .hotel_section_image img {
   height: 100%;
 }
 body .hotel_section .hotel_section_info .hotel_section_text {
+  padding: 40px 40px 40px 40px;
   float: right;
   display: inline-block;
 }
+body .hotel_section .hotel_section_info .hotel_section_text h2 {
+  font-size: 20px;
+}
+body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
+  font-size: 35px;
+}
+body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text {
+  font-size: 24px;
+}
 body .hotel_section .hotel_section_info .hotel_section_text a {
   color: #D58471;
+}
+body .hotel_section .lower_section {
+  margin-top: 7rem;
+}
+body .hotel_section .lower_section .hotel_section_text {
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */
