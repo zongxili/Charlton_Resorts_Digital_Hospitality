@@ -80,5 +80,56 @@ body .hotel_section .lower_section {
 body .hotel_section .lower_section .hotel_section_text {
   float: left;
 }
+body .location_section {
+  background-color: #F4F4F4;
+  display: inline-block;
+  padding: 10rem 5rem 10rem 5rem;
+}
+body .location_section .individual_location {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+body .location_section .individual_location img {
+  height: 650px;
+  width: 660px;
+}
+body .location_section .individual_location h2 {
+  color: #777777;
+  font-size: 25px;
+  margin-top: 15px;
+}
+body .location_section .init_section {
+  float: left;
+  margin-top: 200px;
+}
+body .location_section .follow_section {
+  float: right;
+  margin-top: 200px;
+}
+body .about-us_section {
+  height: 800px;
+  margin: 150px 200px 300px 200px;
+}
+body .about-us_section .about-us_text {
+  padding-top: 100px;
+  display: inline-block;
+}
+body .about-us_section .upper_image {
+  width: 760px;
+  height: 900px;
+  float: right;
+}
+body .about-us_section .about-us_image .upper_image {
+  display: none;
+}
+body .about-us_section .about-us_image .lower_image {
+  margin-top: 100px;
+  width: 560;
+  heigth: 420;
+}
+body .careers_section {
+  height: 1000px;
+  background-color: #D58471;
+}
 
 /*# sourceMappingURL=style.css.map */
