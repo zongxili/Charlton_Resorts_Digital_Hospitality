@@ -32,7 +32,7 @@ body header .list_container ul li {
 }
 body header .center_text {
   top: 50%;
-  transform: translateY(75%);
+  transform: translateY(80%);
 }
 body header .center_text h1 {
   font-size: 70px;
@@ -40,6 +40,28 @@ body header .center_text h1 {
 body header .center_text span {
   font-size: 50px;
   line-height: 100%;
+}
+body .hotel_section {
+  background-color: #1A1515;
+  padding: 100px 0 100px;
+}
+body .hotel_section .hotel_section_info {
+  margin: 0 75px 0 75px;
+}
+body .hotel_section .hotel_section_info .hotel_section_image {
+  display: inline-block;
+}
+body .hotel_section .hotel_section_info .hotel_section_image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .hotel_section .hotel_section_info .hotel_section_text {
+  float: right;
+  display: inline-block;
+}
+body .hotel_section .hotel_section_info .hotel_section_text a {
+  color: #D58471;
 }
 
 /*# sourceMappingURL=style.css.map */
