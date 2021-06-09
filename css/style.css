@@ -156,4 +156,24 @@ body .careers_section .careers_image img {
   margin-right: auto;
 }
 
+footer {
+  height: 1000px;
+  background-color: aqua;
+}
+footer ul {
+  list-style-type: none;
+}
+footer p {
+  color: white;
+}
+footer .footer_menu_list .current_tab {
+  color: #D58471;
+}
+footer .footer_menu_list a {
+  color: white;
+}
+footer .footer_address a {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
