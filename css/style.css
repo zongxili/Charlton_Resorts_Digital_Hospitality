@@ -128,8 +128,32 @@ body .about-us_section .about-us_image .lower_image {
   heigth: 420;
 }
 body .careers_section {
-  height: 1000px;
   background-color: #D58471;
+  padding: 150px 200px 150px 200px;
+  display: inline-block;
+}
+body .careers_section .careers_textinfo {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
+}
+body .careers_section .careers_textinfo h2 {
+  font-size: 20px;
+}
+body .careers_section .careers_textinfo .careers_headertext {
+  font-size: 40px;
+}
+body .careers_section .careers_image {
+  float: right;
+  display: inline-block;
+}
+body .careers_section .careers_image img {
+  width: 620px;
+  height: 790px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
