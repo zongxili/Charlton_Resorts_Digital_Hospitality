@@ -59,9 +59,7 @@ body .hotel_section .hotel_section_info .hotel_section_image {
   display: inline-block;
 }
 body .hotel_section .hotel_section_info .hotel_section_image img {
-  position: relative;
   width: 500px;
-  margin: 0px auto 0px auto;
 }
 body .hotel_section .hotel_section_info .hotel_section_text {
   padding: 40px 40px 40px 40px;
@@ -160,12 +158,8 @@ body .careers_section .careers_image {
   display: inline-block;
 }
 body .careers_section .careers_image img {
-  width: 620px;
-  height: 790px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 700px;
 }
-
 footer {
   background-color: #1A1515;
 }
@@ -221,6 +215,9 @@ footer .row .footer_newsletter form input {
 footer .row .footer_newsletter form a {
   color: #D58471;
   float: right;
+}
+footer .footer_copyright p {
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */
