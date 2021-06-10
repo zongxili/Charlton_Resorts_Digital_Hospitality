@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 body header {
+  position: relative;
   background-image: url("../assets/images/hero.png");
   height: 100vh;
 }
@@ -21,6 +22,7 @@ body header .list_container {
 }
 body header .list_container ul {
   list-style: none;
+  margin-right: 100px;
   display: flex;
 }
 body header .list_container ul li {
@@ -29,16 +31,20 @@ body header .list_container ul li {
   margin-left: auto;
   margin-right: auto;
   flex-grow: 1;
+  font-weight: lighter;
 }
 body header .center_text {
+  position: absolute;
   top: 50%;
-  transform: translateY(80%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 body header .center_text h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 body header .center_text span {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 100%;
 }
 
@@ -54,8 +60,8 @@ body .hotel_section .hotel_section_info .hotel_section_image {
 }
 body .hotel_section .hotel_section_info .hotel_section_image img {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  margin: 0px auto 0px auto;
 }
 body .hotel_section .hotel_section_info .hotel_section_text {
   padding: 40px 40px 40px 40px;
@@ -63,13 +69,13 @@ body .hotel_section .hotel_section_info .hotel_section_text {
   display: inline-block;
 }
 body .hotel_section .hotel_section_info .hotel_section_text h2 {
-  font-size: 20px;
+  font-size: 25px;
 }
 body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
-  font-size: 35px;
+  font-size: 30px;
 }
 body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text {
-  font-size: 24px;
+  font-size: 20px;
 }
 body .hotel_section .hotel_section_info .hotel_section_text a {
   color: #D58471;
@@ -83,20 +89,25 @@ body .hotel_section .lower_section .hotel_section_text {
 body .location_section {
   background-color: #F4F4F4;
   display: inline-block;
-  padding: 10rem 5rem 10rem 5rem;
+  padding: 7rem 5rem 7rem 5rem;
 }
 body .location_section .individual_location {
   display: inline-block;
   margin: 0 auto 0 auto;
 }
 body .location_section .individual_location img {
-  height: 650px;
-  width: 660px;
+  height: 400px;
 }
 body .location_section .individual_location h2 {
   color: #777777;
   font-size: 25px;
   margin-top: 15px;
+}
+body .location_section .individual_location .hotel_title_text {
+  font-size: 30px;
+}
+body .location_section .individual_location .hotel_paragraph_text {
+  font-size: 20px;
 }
 body .location_section .init_section {
   float: left;
@@ -108,15 +119,14 @@ body .location_section .follow_section {
 }
 body .about-us_section {
   height: 800px;
-  margin: 150px 200px 300px 200px;
+  margin: 125px 200px 125px 200px;
 }
 body .about-us_section .about-us_text {
   padding-top: 100px;
   display: inline-block;
 }
 body .about-us_section .upper_image {
-  width: 760px;
-  height: 900px;
+  height: 700px;
   float: right;
 }
 body .about-us_section .about-us_image .upper_image {
@@ -171,6 +181,7 @@ footer ul {
 }
 footer .row {
   padding: 100px 120px 100px 120px;
+  margin-right: 0;
 }
 footer .row .footer_info .footer_menu_list {
   font-size: 20px;
