@@ -3,6 +3,13 @@ body {
   padding: 0;
   margin: 0;
 }
+body .royal_canadian_lodge {
+  background-image: url("../assets/images/royal_canadian_lodge_header.png");
+  object-fit: cover;
+}
+body .royal_canadian_lodge .header_image_text {
+  font-size: 50px;
+}
 body header {
   position: relative;
   background-image: url("../assets/images/hero.png");
@@ -47,6 +54,13 @@ body header .center_text span {
   font-size: 30px;
   line-height: 100%;
 }
+body .royal_canadian_lodge {
+  background-image: url("../assets/images/royal_canadian_lodge_header.png");
+  object-fit: cover;
+}
+body .royal_canadian_lodge .header_image_text {
+  font-size: 50px;
+}
 
 body .hotel_section {
   background-color: #1A1515;
@@ -74,6 +88,7 @@ body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
 }
 body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text {
   font-size: 20px;
+  font-weight: lighter;
 }
 body .hotel_section .hotel_section_info .hotel_section_text a {
   color: #D58471;
@@ -160,6 +175,77 @@ body .careers_section .careers_image {
 body .careers_section .careers_image img {
   height: 700px;
 }
+body .experience_royal_canadian_lodge {
+  padding: 100px 75px 125px 75px;
+  display: inline-flex;
+}
+body .experience_royal_canadian_lodge h1 {
+  font-size: 30px;
+}
+body .experience_royal_canadian_lodge p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+body .experience_royal_canadian_lodge a {
+  color: #D58471;
+}
+body .experience_royal_canadian_lodge .main_image {
+  float: right;
+  height: 600px;
+  object-fit: contain;
+}
+body .experience_royal_canadian_lodge .text_info {
+  margin-top: 50px;
+  padding: 0 100px 0 100px;
+}
+body .experience_royal_canadian_lodge .text_info .inner_img {
+  height: 300px;
+  margin: 50px auto 0 auto;
+}
+body .RCL_accommodations {
+  background-color: #1A1515;
+}
+body .RCL_accommodations p a {
+  font-weight: lighter;
+}
+body .RCL_accommodations a {
+  color: #D58471;
+}
+body .RCL_accommodations img {
+  float: right;
+  height: 500px;
+  object-fit: contain;
+}
+body .RCL_accommodations .text_info {
+  padding-left: 15%;
+  padding-right: 15%;
+  top: 50%;
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
+}
+body .restaurant_section {
+  padding: 100px 50px 100px 50px;
+}
+body .restaurant_section p {
+  font-weight: lighter;
+}
+body .restaurant_section a {
+  color: #D58471;
+}
+body .restaurant_section img {
+  height: 500px;
+  object-fit: contain;
+}
+body .restaurant_section .text_info {
+  padding: 10px 100px 10px 100px;
+}
+body .grotto_spa .text_info {
+  float: left;
+}
+body .grotto_spa .img_section {
+  float: right;
+}
+
 footer {
   background-color: #1A1515;
 }
