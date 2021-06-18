@@ -62,6 +62,25 @@ body .royal_canadian_lodge .header_image_text {
   font-size: 50px;
 }
 
+@media screen and (max-width: 1025px) {
+  body header .logo_container .header-logo-img {
+    margin: 10px 0px 0px 10px;
+  }
+  body header .list_container {
+    position: absolute;
+    top: 20px;
+    left: 70%;
+    display: flex;
+    margin: 0;
+  }
+  body header .list_container ul {
+    display: none;
+  }
+  body header .list_container .list_container_logos {
+    font-size: 50px;
+    display: flex;
+  }
+}
 body .hotel_section {
   background-color: #1A1515;
   padding: 100px 0 100px;
@@ -154,6 +173,7 @@ body .careers_section {
   background-color: #D58471;
   padding: 150px 200px 150px 200px;
   display: inline-block;
+  width: 100vw;
 }
 body .careers_section .careers_textinfo {
   display: inline-block;
