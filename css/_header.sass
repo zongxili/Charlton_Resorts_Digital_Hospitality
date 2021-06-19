@@ -1,5 +1,4 @@
 body
-  width: 100%
   padding: 0
   margin: 0
   .royal_canadian_lodge
@@ -10,6 +9,7 @@ body
   header
     position: relative
     background-image: url('../assets/images/hero.png')
+    object-fit: contain
     height: 100vh
     .logo_container
       display: inline-block
@@ -31,6 +31,8 @@ body
           margin-right: auto
           flex-grow: 1
           font-weight: lighter
+      .list_container_logos
+        display: none
     .center_text
       position: absolute
       top: 50%
@@ -48,22 +50,22 @@ body
     .header_image_text
       font-size: 50px
 
-
 @media screen and (max-width: $medium)
   body
     header
+      position: relative
       .logo_container
         .header-logo-img
-          margin: 10px 0px 0px 10px
+          margin: 50px 0px 0px 50px
       .list_container
-        position: absolute
-        top: 20px
-        left: 70%
-        display: flex
-        margin: 0
-        ul
+        margin-top: 70px
+        #menu_mobile
           display: none
         .list_container_logos
           font-size: 50px
           display: flex
+          float: right
+          margin-right: 10%
+
+
 

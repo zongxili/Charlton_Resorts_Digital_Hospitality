@@ -16,17 +16,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo_container col-lg-2">
+  <header class="header w-100">
+    <div class="logo_container col-lg-2 col-md-6">
       <a href="/" title="Charlton Resorts Logo">
         <img class="header-logo-img cursor-pointer" src="./assets/images/logo_white.png" alt="Charlton Resorts Logo"
           title="Charlton Resorts Logo" />
       </a>
     </div>
-    <div class="list_container col-lg-10 float-right">
+    <div class="list_container col-lg-10 col-md-6 float-right">
       <ul class="list-unstyled" id="menu_mobile">
         <li class="list-item"><a href="/" class="text-white" title="HOME">Home</a></li>
         <li class="list-item"><a href="/" class="text-white" title="Charlton Banff">Charlton Banff</a></li>
@@ -59,9 +62,9 @@
     </div>
   </header>
 
-  <div class="hotel_section">
+  <div class="hotel_section w-100">
     <!-- for Royal Canadian Lodge -->
-    <div class="hotel_section_info upper_section">
+    <div class="hotel_section_info upper_section row">
       <div class="hotel_section_image col-lg-6">
         <img src="./assets/images/royal_canadian_lodge.png" alt="Royal Canadian Lodge's image">
       </div>
@@ -79,11 +82,11 @@
     </div>
 
     <!-- for Charltons Banff -->
-    <div class="hotel_section_info lower_section">
-      <div class="hotel_section_image col-lg-6">
-        <img src="./assets/images/charltons_banff.png" alt="">
+    <div class="hotel_section_info lower_section row">
+      <div class="hotel_section_image col-lg-6 float-lg-right">
+        <img src="./assets/images/charltons_banff.png" alt="Charltons Banff Image from Outside">
       </div>
-      <div class="hotel_section_text text-white col-lg-6">
+      <div class="hotel_section_text text-white col-lg-6 float-lg-left">
         <h2>Charltons Banff</h2>
         <p class="hotel_title_text">Providing Boutique Charm & Rocky Mountain Hospitality for Over 60 Years</p>
         <p class="hotel_paragraph_text">Experience the charm of our boutique, alpine style lodge, luxurious amenities,
@@ -123,6 +126,41 @@
     </div>
   </div>
 
+  <div class="container location_section_mobile">
+    <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner w-100">
+        <div class="item active">
+          <img src="./assets/images/evergreen_restaurant.png" alt="Evergreen Restaurant & Lounge">
+          <img src="./assets/images/meetings_events.png" alt="Meetings & Events section" class="float-right">
+        </div>
+
+        <div class="item">
+          <div></div>
+          <img src="./assets/images/grotto_spa.png" alt="Grotto Spa section">
+          <img src="./assets/images/amazing_location.png" alt="Amazing Location section" class="float-right">
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
   <div class="about-us_section">
     <div class="about-us_text col-lg-6">
       <h2>About us</h2>
@@ -141,7 +179,7 @@
     </div>
   </div>
 
-  <div class="careers_sections w-100">
+  <div class="careers_section w-100">
     <div class="careers_textinfo col-lg-6">
       <h2 class="text-white text-uppercase">Careers</h2>
       <p class="careers_headertext text-white">Exciting Career Opportunities in the Heart of the Canadian Rockies</p>

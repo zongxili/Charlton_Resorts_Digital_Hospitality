@@ -5,9 +5,10 @@ body
     .hotel_section_info
       margin: 0 75px 0 75px
       .hotel_section_image
-        display: inline-block
         img
-          width: 500px
+          width: 70%
+          display: block
+          margin: auto
       .hotel_section_text
         padding: 40px 40px 40px 40px
         float: right
@@ -22,9 +23,11 @@ body
         a
           color: #D58471
     .lower_section
+      background-color: red
       margin-top: 7rem
       .hotel_section_text
         float: left
+
   .location_section
     background-color: #F4F4F4
     display: inline-block
@@ -48,7 +51,8 @@ body
     .follow_section
       float: right
       margin-top: 200px
-  
+  .location_section_mobile
+    display: none
   .about-us_section
     height: 800px
     margin: 125px 200px 125px 200px
@@ -136,9 +140,32 @@ body
       object-fit: contain
     .text_info
       padding: 10px 100px 10px 100px
-      
+
   .grotto_spa
     .text_info
       float: left
     .img_section
       float: right
+
+@media screen and (max-width: $medium)
+  body
+    .hotel_section
+      .hotel_section_info
+        margin-left: 2%
+        margin-right: 2%
+        .hotel_section_image
+          width: 100%
+        .hotel_section_text
+          padding: 40px 0 40px 0
+    .location_section
+      display: none
+    .location_section_mobile
+      display: inline
+      margin: 0px 0px 0px 0px
+      .item
+        background-color: red
+        img
+          width: 50%
+          height: 400px
+          object-fit: contain
+          display: inline

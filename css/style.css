@@ -1,5 +1,4 @@
 body {
-  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -13,6 +12,7 @@ body .royal_canadian_lodge .header_image_text {
 body header {
   position: relative;
   background-image: url("../assets/images/hero.png");
+  object-fit: contain;
   height: 100vh;
 }
 body header .logo_container {
@@ -40,6 +40,9 @@ body header .list_container ul li {
   flex-grow: 1;
   font-weight: lighter;
 }
+body header .list_container .list_container_logos {
+  display: none;
+}
 body header .center_text {
   position: absolute;
   top: 50%;
@@ -63,22 +66,23 @@ body .royal_canadian_lodge .header_image_text {
 }
 
 @media screen and (max-width: 1025px) {
+  body header {
+    position: relative;
+  }
   body header .logo_container .header-logo-img {
-    margin: 10px 0px 0px 10px;
+    margin: 50px 0px 0px 50px;
   }
   body header .list_container {
-    position: absolute;
-    top: 20px;
-    left: 70%;
-    display: flex;
-    margin: 0;
+    margin-top: 70px;
   }
-  body header .list_container ul {
+  body header .list_container #menu_mobile {
     display: none;
   }
   body header .list_container .list_container_logos {
     font-size: 50px;
     display: flex;
+    float: right;
+    margin-right: 10%;
   }
 }
 body .hotel_section {
@@ -88,11 +92,10 @@ body .hotel_section {
 body .hotel_section .hotel_section_info {
   margin: 0 75px 0 75px;
 }
-body .hotel_section .hotel_section_info .hotel_section_image {
-  display: inline-block;
-}
 body .hotel_section .hotel_section_info .hotel_section_image img {
-  width: 500px;
+  width: 70%;
+  display: block;
+  margin: auto;
 }
 body .hotel_section .hotel_section_info .hotel_section_text {
   padding: 40px 40px 40px 40px;
@@ -113,6 +116,7 @@ body .hotel_section .hotel_section_info .hotel_section_text a {
   color: #D58471;
 }
 body .hotel_section .lower_section {
+  background-color: red;
   margin-top: 7rem;
 }
 body .hotel_section .lower_section .hotel_section_text {
@@ -148,6 +152,9 @@ body .location_section .init_section {
 body .location_section .follow_section {
   float: right;
   margin-top: 200px;
+}
+body .location_section_mobile {
+  display: none;
 }
 body .about-us_section {
   height: 800px;
@@ -266,6 +273,34 @@ body .grotto_spa .img_section {
   float: right;
 }
 
+@media screen and (max-width: 1025px) {
+  body .hotel_section .hotel_section_info {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  body .hotel_section .hotel_section_info .hotel_section_image {
+    width: 100%;
+  }
+  body .hotel_section .hotel_section_info .hotel_section_text {
+    padding: 40px 0 40px 0;
+  }
+  body .location_section {
+    display: none;
+  }
+  body .location_section_mobile {
+    display: inline;
+    margin: 0px 0px 0px 0px;
+  }
+  body .location_section_mobile .item {
+    background-color: red;
+  }
+  body .location_section_mobile .item img {
+    width: 50%;
+    height: 400px;
+    object-fit: contain;
+    display: inline;
+  }
+}
 footer {
   background-color: #1A1515;
 }
