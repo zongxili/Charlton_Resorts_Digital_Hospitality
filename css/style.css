@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -66,7 +67,11 @@ body .royal_canadian_lodge .header_image_text {
 }
 
 @media screen and (max-width: 1025px) {
+  body {
+    box-sizing: border-box;
+  }
   body header {
+    width: 100vw;
     position: relative;
   }
   body header .logo_container .header-logo-img {
@@ -116,11 +121,15 @@ body .hotel_section .hotel_section_info .hotel_section_text a {
   color: #D58471;
 }
 body .hotel_section .lower_section {
-  background-color: red;
   margin-top: 7rem;
+  position: relative;
 }
 body .hotel_section .lower_section .hotel_section_text {
-  float: left;
+  position: absolute;
+  left: 0;
+}
+body .hotel_section .lower_section .hotel_section_image {
+  left: 50%;
 }
 body .location_section {
   background-color: #F4F4F4;
@@ -138,6 +147,9 @@ body .location_section .individual_location h2 {
   color: #777777;
   font-size: 25px;
   margin-top: 15px;
+}
+body .location_section .individual_location p {
+  margin-right: 20%;
 }
 body .location_section .individual_location .hotel_title_text {
   font-size: 30px;
@@ -157,24 +169,29 @@ body .location_section_mobile {
   display: none;
 }
 body .about-us_section {
-  height: 800px;
   margin: 125px 200px 125px 200px;
-}
-body .about-us_section .about-us_text {
-  padding-top: 100px;
   display: inline-block;
-}
-body .about-us_section .upper_image {
-  height: 700px;
-  float: right;
-}
-body .about-us_section .about-us_image .upper_image {
-  display: none;
+  position: relative;
 }
 body .about-us_section .about-us_image .lower_image {
-  margin-top: 100px;
-  width: 560;
-  heigth: 420;
+  margin-top: 400px;
+  padding-right: 200px;
+}
+body .about-us_section .about-us_text {
+  position: absolute;
+}
+body .about-us_section .about-us_text h2 {
+  font-size: 35px;
+}
+body .about-us_section .about-us_text p, body .about-us_section .about-us_text a {
+  font-size: 20px;
+  font-weight: 300;
+}
+body .about-us_section .about-us_text p {
+  color: #777777;
+}
+body .about-us_section .about-us_text a {
+  color: #D58471;
 }
 body .careers_section {
   background-color: #D58471;
@@ -274,35 +291,122 @@ body .grotto_spa .img_section {
 }
 
 @media screen and (max-width: 1025px) {
+  body .hotel_section {
+    margin: 0;
+    display: inline-block;
+  }
   body .hotel_section .hotel_section_info {
     margin-left: 2%;
     margin-right: 2%;
   }
-  body .hotel_section .hotel_section_info .hotel_section_image {
+  body .hotel_section .hotel_section_info .hotel_section_image img {
     width: 100%;
   }
   body .hotel_section .hotel_section_info .hotel_section_text {
     padding: 40px 0 40px 0;
   }
+  body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
+    font-size: 35px;
+  }
+  body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text, body .hotel_section .hotel_section_info .hotel_section_text a {
+    font-size: 25px;
+  }
+  body .hotel_section .lower_section {
+    display: inline-block;
+  }
+  body .hotel_section .lower_section .hotel_section_image {
+    position: static;
+  }
+  body .hotel_section .lower_section .hotel_section_text {
+    position: static;
+  }
   body .location_section {
     display: none;
   }
   body .location_section_mobile {
-    display: inline;
-    margin: 0px 0px 0px 0px;
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    background-color: #F4F4F4;
   }
-  body .location_section_mobile .item {
-    background-color: red;
+  body .location_section_mobile #myCarousel {
+    width: 100%;
   }
-  body .location_section_mobile .item img {
-    width: 50%;
-    height: 400px;
+  body .location_section_mobile #myCarousel .item {
+    margin: 0;
+    width: 100%;
+  }
+  body .location_section_mobile #myCarousel .item .singleItem {
+    text-align: left;
+    display: inline-block;
+  }
+  body .location_section_mobile #myCarousel .item .singleItem h2 {
+    font-size: 20px;
+    padding-bottom: 5rem;
+    height: 50px;
+  }
+  body .location_section_mobile #myCarousel .item .singleItem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  body .about-us_section {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 100vw;
+    margin: 200px 0px 100px 0px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  body .about-us_section .about-us_image {
+    position: relative;
+  }
+  body .about-us_section .about-us_image .lower_image {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    padding-left: 40%;
+    bottom: 0;
+  }
+  body .about-us_section .about-us_image .upper_image {
+    padding-top: 20px;
+    padding-right: 30%;
+    margin-bottom: 200px;
+  }
+  body .about-us_section .about-us_text {
+    display: inline-block;
+    position: static;
+  }
+  body .careers_section {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body .careers_section .careers_image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  body .careers_section .careers_image img {
+    width: 100%;
     object-fit: contain;
-    display: inline;
+    object-position: top;
+    display: block;
+    margin: auto;
+  }
+  body .careers_section .careers_textinfo {
+    margin: 200px 10px 20px 10px;
+    padding-top: 100px;
+  }
+  body .careers_section .careers_textinfo p, body .careers_section .careers_textinfo a {
+    font-size: 25px;
   }
 }
 footer {
   background-color: #1A1515;
+  margin: 0;
 }
 footer a {
   color: white;

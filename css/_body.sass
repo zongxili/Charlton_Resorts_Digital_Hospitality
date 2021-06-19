@@ -23,11 +23,14 @@ body
         a
           color: #D58471
     .lower_section
-      background-color: red
       margin-top: 7rem
+      position: relative
       .hotel_section_text
-        float: left
-
+        position: absolute
+        left: 0
+      .hotel_section_image
+        left: 50%
+        
   .location_section
     background-color: #F4F4F4
     display: inline-block
@@ -41,6 +44,8 @@ body
         color: #777777
         font-size: 25px
         margin-top: 15px
+      p
+        margin-right: 20%
       .hotel_title_text
         font-size: 30px
       .hotel_paragraph_text
@@ -54,21 +59,24 @@ body
   .location_section_mobile
     display: none
   .about-us_section
-    height: 800px
     margin: 125px 200px 125px 200px
-    .about-us_text
-      padding-top: 100px
-      display: inline-block
-    .upper_image
-      height: 700px
-      float: right
+    display: inline-block
+    position: relative
     .about-us_image
-      .upper_image
-        display: none
       .lower_image
-        margin-top: 100px
-        width: 560
-        heigth: 420
+        margin-top: 400px
+        padding-right: 200px
+    .about-us_text
+      position: absolute
+      h2 
+        font-size: 35px
+      p, a
+        font-size: 20px
+        font-weight: 300
+      p
+        color: #777777
+      a
+        color: #D58471
 
   .careers_section
     background-color: #D58471
@@ -150,22 +158,96 @@ body
 @media screen and (max-width: $medium)
   body
     .hotel_section
+      margin: 0
+      display: inline-block
       .hotel_section_info
         margin-left: 2%
         margin-right: 2%
         .hotel_section_image
-          width: 100%
+          img
+            width: 100%
         .hotel_section_text
           padding: 40px 0 40px 0
+          .hotel_title_text
+            font-size: 35px
+          .hotel_paragraph_text, a
+            font-size: 25px
+      .lower_section
+        display: inline-block
+        .hotel_section_image
+          position: static
+        .hotel_section_text
+          position: static
+
     .location_section
       display: none
+
     .location_section_mobile
-      display: inline
-      margin: 0px 0px 0px 0px
-      .item
-        background-color: red
+      padding-top: 5rem
+      width: 100%
+      display: flex
+      background-color: #F4F4F4
+      #myCarousel
+        width: 100%
+        .carousel-inner
+        .item
+          margin: 0
+          width: 100%
+          .singleItem
+            text-align: left
+            display: inline-block
+            h2
+              font-size: 20px
+              padding-bottom: 5rem
+              height: 50px
+            img
+              width: 100%
+              height: 300px
+              object-fit: cover
+    
+    .about-us_section
+      background-color: #FFFFFF
+      display: inline-block
+      width: 100vw
+      margin: 200px 0px 100px 0px
+      position: relative
+      box-sizing: border-box
+      .about-us_image
+        position: relative
+        .lower_image
+          margin: 0
+          padding: 0
+          position: absolute
+          z-index: 1
+          padding-left: 40%
+          bottom: 0
+        .upper_image 
+          padding-top: 20px
+          padding-right: 30%
+          margin-bottom: 200px
+      .about-us_text
+        display: inline-block
+        position: static
+
+    .careers_section
+      padding: 0
+      display: inline-block
+      margin: 0
+      box-sizing: border-box
+      .careers_image
+        margin-top: 40px
+        margin-bottom: 40px
+        padding: 0
         img
-          width: 50%
-          height: 400px
+          width: 100%
           object-fit: contain
-          display: inline
+          object-position: top
+          display: block
+          margin: auto
+      .careers_textinfo
+        // width: 100%
+        // display: inline
+        margin: 200px 10px 20px 10px
+        padding-top: 100px
+        p, a
+          font-size: 25px
