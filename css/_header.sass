@@ -5,6 +5,7 @@ body
   .royal_canadian_lodge
     background-image: url('../assets/images/royal_canadian_lodge_header.png')
     object-fit: cover
+    background-size: cover
     .header_image_text
       font-size: 50px
   header
@@ -12,6 +13,7 @@ body
     background-image: url('../assets/images/hero.png')
     object-fit: contain
     height: 100vh
+    background-size: cover
     .logo_container
       display: inline-block
       .header-logo-img
@@ -38,7 +40,7 @@ body
       position: absolute
       top: 50%
       left: 50%
-      width: 80%
+      width: 90%
       -ms-transform: translate(-50%, -50%)
       transform: translate(-50%, -50%)
       h1
@@ -70,6 +72,16 @@ body
           display: flex
           float: right
           margin-right: 10%
+      .center_text
+        h1
+          font-size: 700%
 
-@media screen and (max-width: $medium)
+@media screen and (max-width: $small)
   body
+    header
+      .center_text
+        h1
+          font-size: 30px
+        span
+          font-size: 20px
+          line-height: 1.6
