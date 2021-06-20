@@ -85,7 +85,7 @@ body .royal_canadian_lodge .header_image_text {
     display: none;
   }
   body header .list_container .list_container_logos {
-    font-size: 50px;
+    font-size: 250%;
     display: flex;
     float: right;
     margin-right: 10%;
@@ -212,6 +212,10 @@ body .careers_section .careers_textinfo h2 {
 }
 body .careers_section .careers_textinfo .careers_headertext {
   font-size: 40px;
+}
+body .careers_section .careers_textinfo p, body .careers_section .careers_textinfo a {
+  font-size: 20px;
+  font-weight: 300;
 }
 body .careers_section .careers_image {
   float: right;
