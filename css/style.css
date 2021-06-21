@@ -3,12 +3,12 @@ body {
   padding: 0;
   margin: 0;
 }
-body .royal_canadian_lodge {
+body .RCL_header {
   background-image: url("../assets/images/royal_canadian_lodge_header.png");
   object-fit: cover;
   background-size: cover;
 }
-body .royal_canadian_lodge .header_image_text {
+body .RCL_header .center_text .header_image_text {
   font-size: 50px;
 }
 body header {
@@ -60,13 +60,6 @@ body header .center_text h1 {
 body header .center_text span {
   font-size: 30px;
   line-height: 1.6;
-}
-body .royal_canadian_lodge {
-  background-image: url("../assets/images/royal_canadian_lodge_header.png");
-  object-fit: cover;
-}
-body .royal_canadian_lodge .header_image_text {
-  font-size: 50px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -270,7 +263,7 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
     width: 100%;
   }
   body .hotel_section .hotel_section_info .hotel_section_text {
-    padding: 5% 0 5% 0;
+    padding: 2% 0 0 0;
   }
   body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
     font-size: 35px;
@@ -339,6 +332,7 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
     z-index: 1;
     padding-left: 40%;
     bottom: 0;
+    padding-right: 5%;
   }
   body .about-us_section .about-us_image .upper_image {
     padding-top: 20px;
