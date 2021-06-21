@@ -98,45 +98,45 @@ body header .center_text span {
     line-height: 1.6;
   }
 }
-body .hotel_section {
+body .property_section {
   background-color: #1A1515;
   padding: 10% 0 10%;
 }
-body .hotel_section .hotel_section_info {
+body .property_section .property_section_info {
   margin: 0 75px 0 75px;
 }
-body .hotel_section .hotel_section_info .hotel_section_image img {
+body .property_section .property_section_info .property_section_image img {
   width: 70%;
   display: block;
   margin: auto;
 }
-body .hotel_section .hotel_section_info .hotel_section_text {
+body .property_section .property_section_info .property_section_text {
   padding: 40px 40px 40px 40px;
   float: right;
   display: inline-block;
 }
-body .hotel_section .hotel_section_info .hotel_section_text h2 {
+body .property_section .property_section_info .property_section_text h2 {
   font-size: 25px;
 }
-body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
+body .property_section .property_section_info .property_section_text .hotel_title_text {
   font-size: 30px;
 }
-body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text {
+body .property_section .property_section_info .property_section_text .hotel_paragraph_text {
   font-size: 20px;
   font-weight: lighter;
 }
-body .hotel_section .hotel_section_info .hotel_section_text a {
+body .property_section .property_section_info .property_section_text a {
   color: #D58471;
 }
-body .hotel_section .lower_section {
+body .property_section .lower_section {
   margin-top: 7rem;
   position: relative;
 }
-body .hotel_section .lower_section .hotel_section_text {
+body .property_section .lower_section .property_section_text {
   position: absolute;
   left: 0;
 }
-body .hotel_section .lower_section .hotel_section_image {
+body .property_section .lower_section .property_section_image {
   left: 50%;
 }
 body .location_section {
@@ -243,12 +243,12 @@ body .RCL_accommodations {
 body .restaurant_section {
   background-color: #FFFFFF;
 }
-body .restaurant_section .hotel_section_text .hotel_paragraph_text {
+body .restaurant_section .property_section_text .hotel_paragraph_text {
   color: #777777;
 }
 
 @media screen and (max-width: 1367px) {
-  body .lower_section .hotel_section_image {
+  body .lower_section .property_section_image {
     float: right;
     margin: 0;
   }
@@ -257,33 +257,33 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
   body .experience_royal_canadian_lodge .about-us_image .upper_image {
     float: none;
   }
-  body .hotel_section {
+  body .property_section {
     margin: 0;
     display: inline-block;
   }
-  body .hotel_section .hotel_section_info {
+  body .property_section .property_section_info {
     margin-left: 2%;
     margin-right: 2%;
   }
-  body .hotel_section .hotel_section_info .hotel_section_image img {
+  body .property_section .property_section_info .property_section_image img {
     width: 100%;
   }
-  body .hotel_section .hotel_section_info .hotel_section_text {
+  body .property_section .property_section_info .property_section_text {
     padding: 2% 0 0 0;
   }
-  body .hotel_section .hotel_section_info .hotel_section_text .hotel_title_text {
+  body .property_section .property_section_info .property_section_text .hotel_title_text {
     font-size: 35px;
   }
-  body .hotel_section .hotel_section_info .hotel_section_text .hotel_paragraph_text, body .hotel_section .hotel_section_info .hotel_section_text a {
+  body .property_section .property_section_info .property_section_text .hotel_paragraph_text, body .property_section .property_section_info .property_section_text a {
     font-size: 25px;
   }
-  body .hotel_section .lower_section {
+  body .property_section .lower_section {
     display: inline-block;
   }
-  body .hotel_section .lower_section .hotel_section_image {
+  body .property_section .lower_section .property_section_image {
     position: static;
   }
-  body .hotel_section .lower_section .hotel_section_text {
+  body .property_section .lower_section .property_section_text {
     position: static;
   }
   body .location_section {
