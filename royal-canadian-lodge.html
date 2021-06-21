@@ -20,13 +20,13 @@
 
 <body>
   <header class="header royal_canadian_lodge w-100">
-    <div class="logo_container col-lg-2">
+    <div class="logo_container col-lg-2 col-6">
       <a href="/" title="Charlton Resorts Logo">
         <img class="header-logo-img cursor-pointer" src="./assets/images/logo_white.png" alt="Charlton Resorts Logo"
           title="Charlton Resorts Logo" />
       </a>
     </div>
-    <div class="list_container col-lg-10 float-right">
+    <div class="list_container col-lg-10 col-6 float-right">
       <ul class="list-unstyled" id="menu_mobile">
         <li class="list-item"><a href="/" class="text-white" title="HOME">Home</a></li>
         <li class="list-item"><a href="/" class="text-white" title="Charlton Banff">Charlton Banff</a></li>
@@ -40,22 +40,26 @@
         <li class="list-item"><a href="/" class="text-white" title="Careers">Careers</a></li>
         <li class="list-item"><a href="/" class="text-white" title="Contact us">Contact us</a></li>
       </ul>
-      <div class="mob-cal-icon">
-        <a href="tel:18006611379" title="18006611379">
-          <i class="fas fa-phone-alt text-white"></i>
-        </a>
-      </div>
-      <div class="navToggle" id="menuToggle">
-        <i class="fas fa-bars text-white"></i>
+      <div class="list_container_logos">
+        <!-- Phone & Menu Logos in Tablet/Mobile views -->
+        <div class="mob-cal-icon">
+          <a href="tel:18006611379" title="18006611379">
+            <i class="fas fa-phone-alt text-white"></i>
+          </a>
+        </div>
+        <div class="navToggle ml-4" id="menuToggle">
+          <i class="fas fa-bars text-white"></i>
+        </div>
       </div>
     </div>
+
     <div class="center_text text-center">
       <p class="text-white header_image_text">The Royal Canadain Lodge</p>
       <span class="text-white mb-0">The Rejuvenating Escape and Luxury Getaway You Have Been Waiting For</span>
     </div>
   </header>
 
-  <div class="experience_royal_canadian_lodge">
+  <!-- <div class="experience_royal_canadian_lodge">
     <div class="row w-100">
       <div class="col-lg-6 text_info">
         <h1>Explore Royal Canadian Lodge in Banff, AB</h1>
@@ -74,9 +78,26 @@
       </div>
       <img src="./assets/images/RCL_inner.png" alt="" class="col-lg-6 main_image">
     </div>
+  </div> -->
+
+  <div class="about-us_section">
+    <div class="about-us_image w-100">
+      <img class="lower_image col-lg-6" src="./assets/images/RCL_pool.png" alt="Image 2 of Lake Louise in Banff">
+      <img class="upper_image col-lg-6" src="./assets/images/RCL_inner.png" alt="Image 1 of Lake Louise in Banff">
+    </div>
+    <div class="about-us_text col-lg-6">
+      <h1 class="header_text">Explore Royal Canadian Lodge in Banff, AB</h1>
+      <p>Stay with us at the Royal Canadian Lodge and surround yourself with Banff National Park’s lush forests,
+        majestic mountains, and stunning lakes. Experience our restorative Grotto Spa during your visit and discover the
+        relaxation you deserve. From the moment you arrive and feel the warmth of our homely stone fireplace, to the
+        mornings you enjoy Evergreen Restaurant’s in-room dining from the comfort of your luxurious bed, you will feel
+        your worries drift away and know you are finally home.
+      </p>
+      <a href="https://www.royalcanadianlodge.com/" class="text-uppercase">-- Learn more</a>
+    </div>
   </div>
 
-  <div class="RCL_accommodations">
+  <!-- <div class="RCL_accommodations">
     <div class="row w-100">
       <div class="text_info col-lg-6">
         <h2 class="text-white">Accomodations</h2>
@@ -90,6 +111,21 @@
         <a href="https://www.royalcanadianlodge.com/" class="text-uppercase">— Learn More</a>
       </div>
       <img src="./assets/images/RCL_accomodations.png" alt="" class="col-lg-6 mt-5 mb-5">
+    </div>
+  </div> -->
+
+  <div class="careers_section w-100">
+    <div class="careers_image col-lg-6">
+      <img src="./assets/images/careers.png" alt="Careers Model in Hospitality Industry">
+    </div>
+    <div class="careers_textinfo col-lg-6">
+      <h2 class="text-white careers_headertext">Accomodations</h2>
+      <p class="text-white">The Royal Canadian Lodge is the ideal destination to stay for couples, solo travellers,
+        families on vacation, and friends alike. Experience our exceptional service along with comfort, convenience, and
+        value with every room type. From our comfortable Premier Rooms with fireplace and choice of plush bedding
+        arrangements, to our spacious suites featuring luxurious jetted tubs, every guest will enjoy a restful good
+        night’s sleep at the Royal Canadian Lodge.</p>
+      <a href="https://www.royalcanadianlodge.com/" class="text-uppercase text-white">— Learn More</a>
     </div>
   </div>
 
@@ -125,7 +161,7 @@
   <footer class="w-100">
     <!--Footer section-->
     <div class="row">
-      <div class="footer_info col-lg-4">
+      <div class="footer_info col-xl-4 col-md-6 col">
         <div class="footer_menu_list">
           <ul>
             <li><a href="/" class="current_tab">Home</a></li>
@@ -150,7 +186,7 @@
         </div>
       </div>
 
-      <div class="footer_address col-lg-4">
+      <div class="footer_address col-xl-4 col-md-6">
         <div class="footer_individual_address">
           <!--Charlton Banff Resorts-->
           <p class="footer_address_name">Charlton Banff Resorts</p>
@@ -179,7 +215,7 @@
         </div>
       </div>
 
-      <div class="footer_newsletter col-lg-4">
+      <div class="footer_newsletter col-xl-4">
         <p class="footer_newsletter_title">Newsletter</p>
         <p class="footer_newsletter_text">Sign up to our Newsletter</p>
         <form action="">
@@ -187,7 +223,6 @@
           <a href="" class="text-uppercase">— Send</a>
         </form>
       </div>
-
     </div>
 
     <div class="row footer_copyright">
@@ -200,7 +235,6 @@
             Hospitality</a></p>
       </div>
     </div>
-
   </footer>
 </body>
 

@@ -195,7 +195,7 @@ body .about-us_section .about-us_image .lower_image {
 body .about-us_section .about-us_text {
   position: absolute;
 }
-body .about-us_section .about-us_text h2 {
+body .about-us_section .about-us_text .header_text {
   font-size: 35px;
 }
 body .about-us_section .about-us_text p, body .about-us_section .about-us_text a {
