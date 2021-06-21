@@ -247,6 +247,12 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
   color: #777777;
 }
 
+@media screen and (max-width: 1367px) {
+  body .lower_section .hotel_section_image {
+    float: right;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 1025px) {
   body .experience_royal_canadian_lodge .about-us_image .upper_image {
     float: none;
@@ -348,7 +354,6 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
     display: inline-block;
     margin: 0;
     box-sizing: border-box;
-    padding-bottom: 100px;
   }
   body .careers_section .careers_image {
     margin-top: 40px;
