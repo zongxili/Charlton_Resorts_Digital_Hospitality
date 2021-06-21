@@ -255,6 +255,9 @@ body .restaurant_section .hotel_section_text .hotel_paragraph_text {
 }
 
 @media screen and (max-width: 1025px) {
+  body .experience_royal_canadian_lodge .about-us_image .upper_image {
+    float: none;
+  }
   body .hotel_section {
     margin: 0;
     display: inline-block;
