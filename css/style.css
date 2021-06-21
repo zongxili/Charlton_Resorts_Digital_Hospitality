@@ -185,8 +185,12 @@ body .about-us_section .about-us_image .lower_image {
   margin-top: 400px;
   padding-right: 200px;
 }
+body .about-us_section .about-us_image .upper_image {
+  float: right;
+}
 body .about-us_section .about-us_text {
   position: absolute;
+  top: 0;
 }
 body .about-us_section .about-us_text .header_text {
   font-size: 35px;
@@ -344,6 +348,7 @@ body .restaurant_section .property_section_text .hotel_paragraph_text {
     padding-top: 20px;
     padding-right: 30%;
     margin-bottom: 20%;
+    float: none;
   }
   body .about-us_section .about-us_text {
     display: inline-block;
